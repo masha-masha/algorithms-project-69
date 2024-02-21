@@ -1,11 +1,16 @@
 {
   "name": "algorithms-project-69",
+  "type": "module",
   "version": "1.0.0",
   "description": "'Algorithms'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-plugin-jest": "^27.9.0"
+  }
 }
