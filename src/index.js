@@ -12,8 +12,9 @@ const find = (str, word) => {
 const search = (data, query) => {
   const res = data
     .filter((item) => find(item.text, query).length > 0)
+    .sort((a, b) => find(b.text, query).length - find(a.text, query).length)
     .map((item) => item.id)
   return res;
 };
 
-console.log(search(docs, 'pint!'));
+console.log(search(docs, 'shoot'));
